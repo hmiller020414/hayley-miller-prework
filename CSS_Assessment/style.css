@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .header {
+     margin-bottom: 20px;
+     background-color: gray;
+     padding: 1px;
+     width: 100%;
+  }
+
+  .left {
+      float: left;
+      background-color: blue;
+      width: 50%;
+      padding-top: 200px;
+      padding-bottom: 200px;
+  }
+
+  .right {
+      float: left;
+      background-color: red;
+      width: 25%;
+      margin-left: 25%;
+      padding-top: 200px;
+      padding-bottom: 200px;
+  }
+
+  .footer {
+      background-color: green;
+      padding: 1px;
+      width: 100%;
+      clear: both;
+      position: absolute;
+      bottom: 0;
+  }
