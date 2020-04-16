@@ -1,0 +1,85 @@
+.navbar-brand {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: #4aaaa5;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 18px;
+}
+
+#navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 0px;
+}
+
+#navbarSupportedContent #nav-item {
+    color: #777;
+    font-size: 14px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#navigation {
+    padding: 0px;
+}
+
+#navigation a:hover {
+    color: #fff;
+}
+
+body {
+    background-image: url(../images/light-grey-terrazzo.png);
+    background-color: #ccc;
+}
+
+#profilepic {
+    margin-top: 10px;
+}
+
+#paragraph1 {
+    margin-top: 15px;
+}
+    
+    
+ #paragraph2 {
+    margin: 20px auto;
+    padding-left: 15.75px;
+}
+
+#paragraph3 {
+    margin: 0 auto;
+    padding-left: 15.75px;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 5px solid #4aaaa5;
+    background-color: #666;
+    color: #fff;
+  }
+
+.card {
+    margin:2em auto;
+    border: 2px solid #ddd;
+}
+
+.card-title {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #4aaaa5;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
+p {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    color: #777;
+}
