@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Module 2 Assessment Word Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="title">Wheel of Hangman</h1>
+        <img src="assets/images/wheel-of-fortune-spin.png" height=250px width=250px id="wheel">
+        <p>Welcome to your Final Puzzle! Press any key to get started. You'll be given the letters R, S, T, L, N,
+            E.<br>Solve the puzzle before your guesses run out to WIN BIG!</p>
+    </div>
+    <p id="current-word">Current Puzzle:</p>
+    <div id="puzzle-area">
+        <p id="fillintheblank"></p>
+    </div>
+    <div>
+        <p id="incorrect-guesses-label">Letters already guessed:</p>
+        <p id="incorrect-guesses"></p>
+    </div>
+    <div>
+        <p id="total-wins-label">Wins:</p>
+        <p id="total-wins"></p>
+    </div>
+    <div id="guesses-count">
+        <p id="guesses-remaining-label">Number of guesses remaining:</p>
+        <p id="guesses-remaining"></p>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+</body>

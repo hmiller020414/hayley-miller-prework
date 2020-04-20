@@ -1,0 +1,67 @@
+body {
+    background-color: #0C8E6F;
+}
+
+h1 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 85px;
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    position: relative;
+    margin: 0 auto 15px auto;
+}
+
+#wheel {
+    margin: 10px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+#wheel:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 5s ease-in-out 0.5s;
+}
+
+p {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 27px;
+}
+
+#puzzle-area {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#fillintheblank {
+    font-family: 'Fira Mono', monospace;
+    font-size: 65px;
+    line-height: 65px;
+    color: #000;
+    background-color: #fff;
+    border: 5px solid #000;
+    text-align: center;
+    padding: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#incorrect-guesses-label {
+    margin-top: 10px;
+}
+
+#incorrect-guesses {
+    text-transform: uppercase;
+    color: #ccc;
+}
+
+#total-wins, #guesses-remaining {
+    color: #ccc;
+}
