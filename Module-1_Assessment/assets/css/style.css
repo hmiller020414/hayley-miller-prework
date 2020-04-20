@@ -1,3 +1,4 @@
+/*navbar - all pages!*/
 .navbar-brand {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     background-color: #4aaaa5;
@@ -13,7 +14,7 @@
     padding: 0px;
 }
 
-#navbarSupportedContent, #nav-item {
+#nav-item {
     color: #777;
     font-size: 14px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -21,36 +22,14 @@
 
 #navigation {
     padding: 0px;
+    max-width: 960px;
 }
 
 #navigation a:hover {
-    color: #fff;
+    color: #777;
 }
 
-body {
-    background-image: url(../images/light-grey-terrazzo.png);
-    background-color: #ccc;
-}
-
-#profilepic {
-    margin-top: 10px;
-}
-
-#paragraph1 {
-    margin-top: 15px;
-}
-    
-    
- #paragraph2 {
-    margin: 20px auto;
-    padding-left: 15.75px;
-}
-
-#paragraph3 {
-    margin: 0 auto;
-    padding-left: 15.75px;
-}
-
+/*footer - all pages!*/
 .footer {
     position: fixed;
     bottom: 0;
@@ -64,13 +43,21 @@ body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   }
 
+/*all pages*/
+body {
+    background-image: url(../images/light-grey-terrazzo.png);
+    background-color: #ccc;
+}
+
 .card {
-    margin:2em auto;
+    margin: 2em auto;
+    margin-bottom: 100px;
     border: 2px solid #ddd;
+    max-width: 960px;
 }
 
 .card-title {
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
     font-size: 28px;
     font-weight: bold;
     color: #4aaaa5;
@@ -86,6 +73,34 @@ p {
     color: #777;
 }
 
+/*about me specific*/
+#profilepic {
+    margin-top: 10px;
+}
+
+#about-me-p1 {
+    margin-top: 15px;
+}
+
+#about-me-p2 {
+    margin: 20px auto;
+    padding-left: 15.75px;
+}
+
+#about-me-p3 {
+    margin: 0 auto;
+    padding-left: 15.75px;
+}
+
+
+/*contact specific*/
+#name-label, #email-label, #message-label {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 #submit-contact-button {
     background-color: #4aaaa5;
     border-radius: 0%;
@@ -95,13 +110,28 @@ p {
     font-size: 14px;   
 }
 
-#label1, #label2, #label3 {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777;
-    margin-top: 10px;
-    margin-bottom: 5px;
+/*portfolio specific*/
+.gallery-row {
+    text-align: center;
+    margin-top: 30px;
 }
 
-#gallery {
-    margin-bottom: 100px;
+.gallery-column {
+    text-align: center;
+    position: relative;
+}
+
+.gallery-overlay-text {
+    position: absolute;
+    background-color: #4aaaa5;
+    padding: 5px;
+    width: 220px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+}
+
+#gallery-text {
+    color: white;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
 }

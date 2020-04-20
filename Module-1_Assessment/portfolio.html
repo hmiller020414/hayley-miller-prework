@@ -15,13 +15,9 @@
 <body>
     <!--navbar-->
     <nav class="navbar navbar-expand-lg" id="navbar">
-        <div class="container" style="max-width: 960px" id="navigation">
+        <div class="container" id="navigation">
             <a class="navbar-brand" href="index.html">Hayley Miller</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html" id="nav-item">About</a>
@@ -38,58 +34,49 @@
     </nav>
     <!--portfolio-->
     <div class="container">
-        <div class="card" style="width: 960px;" id="gallery">
+        <div class="card" id="gallery">
             <div class="card-body">
                 <h1 class="card-title">Portfolio</h1>
                 <!--gallery goes here-->
-                <div class="row">
-                    <div class="col-md-4">
-                        <!--image1-->
-                        <div class="card">
-                            <img src="assets/images/maps.jpg" class="card-img-top" alt="Large map" height="281.33px" width="281.33px">
-                            <!--<div class="card-body">
-                                <p>Google Maps</p>
-                            </div>-->
+                <div class="row gallery-row">
+                    <div class="col-md-4 gallery-column">
+                        <img src="assets/images/maps.jpg" alt="Large map" height="220px" width="220px">
+                        <div class="text-block gallery-overlay-text">
+                            <p id="gallery-text">Google Maps</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 gallery-column">
                         <!--image2-->
-                        <div class="card">
-                            <img src="assets/images/emojiface.jpg" class="card-img-top" alt="Large map" height="281.33px" width="281.33px">
-                            <!--<div class="card-body">
-                                <p>Bitmoji</p>
-                            </div>-->
+                        <img src="assets/images/emojiface.jpg" alt="Woman using Bitmoji App" height="220px"
+                            width="220px">
+                        <div class="text-block gallery-overlay-text">
+                            <p id="gallery-text">Bitmoji</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
+                <div class="row gallery-row">
+                    <div class="col-md-4 gallery-column">
                         <!--image3-->
-                        <div class="card">
-                            <img src="assets/images/wordgame.jpg" class="card-img-top" alt="Large map" height="281.33px" width="281.33px">
-                            <!--<div class="card-body">
-                                <p>Words with Friends</p>
-                            </div>-->
+                        <img src="assets/images/wordgame.jpg" alt="Letter tiles spelling Hello" height="220px"
+                            width="220px">
+                        <div class="text-block gallery-overlay-text">
+                            <p id="gallery-text">Words with Friends</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 gallery-column">
                         <!--image4-->
-                        <div class="card">
-                            <img src="assets/images/jigsawpuzzle.jpg" class="card-img-top" alt="Large map" height="281.33px" width="281.33px">
-                            <!--<div class="card-body">
-                                <p>Jigsaw Puzzles Online</p>
-                            </div>-->
+                        <img src="assets/images/jigsawpuzzle.jpg" alt="Jigsaw Puzzle" height="220px" width="220px">
+                        <div class="text-block gallery-overlay-text">
+                            <p id="gallery-text">Jigsaw Puzzles Online</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
+                <div class="row gallery-row">
+                    <div class="col-md-4 gallery-column">
                         <!--image5-->
-                        <div class="card">
-                            <img src="assets/images/reading.jpg" class="card-img-top" alt="Large map" height="281.33px" width="281.33px">
-                            <!--<div class="card-body">
-                                <p>Audible</p>
-                            </div>-->
+                        <img src="assets/images/reading.jpg" alt="Stack of books" height="220px" width="220px">
+                        <div class="text-block gallery-overlay-text">
+                            <p id="gallery-text">Audible</p>
                         </div>
                     </div>
                 </div>
