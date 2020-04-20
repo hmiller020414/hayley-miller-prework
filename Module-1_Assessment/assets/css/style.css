@@ -75,6 +75,12 @@ p {
 
 /*about me specific*/
 #profilepic {
+    width: 175px;
+    max-width: 100%;
+    height: auto;
+}
+
+#profile-pic-container {
     margin-top: 10px;
 }
 
@@ -83,13 +89,11 @@ p {
 }
 
 #about-me-p2 {
-    margin: 20px auto;
-    padding-left: 15.75px;
+    margin: 15px auto;
 }
 
 #about-me-p3 {
-    margin: 0 auto;
-    padding-left: 15.75px;
+    margin: 15px auto;
 }
 
 
@@ -99,6 +103,10 @@ p {
     color: #777;
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+form {
+    margin: 10px;
 }
 
 #submit-contact-button {
@@ -119,6 +127,11 @@ p {
 .gallery-column {
     text-align: center;
     position: relative;
+}
+
+#maps-image, #emoji-face-image, #word-game-image, #jigsaw-puzzle-image, #reading-image {
+    width: 220px;
+    height: auto;
 }
 
 .gallery-overlay-text {
