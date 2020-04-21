@@ -10,7 +10,7 @@ Pressing any letter will automatically start the game by generating a random wor
 
 The letters R, S, T, L, N and E will automatically appear in your puzzle for you, if they exist.
 
-You will have 6 incorrect guesses to correctly fill in the missing blanks and solve the puzzle. You will see how many guesses remain, the letters you've already guessed and your win count beneath the puzzle.
+You will have 5 incorrect guesses to correctly fill in the missing blanks and solve the puzzle. You will see how many guesses remain, the letters you've incorrectly guessed and your win count beneath the puzzle.
 
 After completing — or failing to complete — a puzzle, press any key to generate a new one!
 
@@ -25,4 +25,3 @@ Wheel of Hangman was created by Hayley Miller. Special thanks go to significant 
 ### Contact
 
 Reach out to Hayley Miller using hayleymm14@gmail.com with any suggestions for improvement, feedback, or just to let her know which was your favorite puzzle!
-

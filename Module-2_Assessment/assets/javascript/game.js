@@ -1,7 +1,7 @@
 let guessesMade = [];
 let incorrectGuesses = [];
 let gameStarted = false;
-const wordBank = ["sydney opera house", "macchu picchu", "grand ole opry", "disneyland", "the big apple", "rubik's cube", "trampoline", "bungee cord", "air guitar", "jacuzzi", "not on my watch", "cat got your tongue", "later gator", "sick as a dog", "gone in a flash"];
+const wordBank = ["sydney opera house", "macchu picchu", "grand ole opry", "palm beach", "the big apple", "rubik's cube", "trampoline", "bungee cord", "air guitar", "jacuzzi", "oscar buzz", "up up and away", "cat got your tongue", "ahead of the curve", "sick as a dog", "by the book", "gone in a flash"];
 let currentWord = "";
 let currentSolution = [];
 const startingGuesses = 5;
@@ -9,6 +9,8 @@ let guessesRemaining = startingGuesses;
 let totalWins = 0;
 let lastWord = "";
 const freeLetters = ["r", "s", "t", "l", "n", "e"];
+var modal = document.getElementById("result-modal");
+
 
 const stringifyPuzzle = function() {
     let displayString = "";
@@ -73,6 +75,7 @@ const isCorrectGuess = function(key) {
 }
 
 const keyPressed = function (event) {
+    modal.style.display = "none";
     if (gameStarted) {
         const key = event.key;
         if (guessesMade.includes(key)) {
@@ -91,12 +94,16 @@ const keyPressed = function (event) {
                 guessesRemaining -= 1;
                 if (guessesRemaining===0) {
                     currentSolution=currentWord.split().join(" ");
+                    modal.style.display = "block";
+                    document.querySelector('#result-modal-message').innerText = "L O S E R !";
                     gameStarted=false;
                 }
             }
             else if (currentSolution.join("")===currentWord) {
                 totalWins += 1;
                 gameStarted=false;
+                modal.style.display = "block";
+                document.querySelector('#result-modal-message').innerText = "W I N N E R !";
             }
             updateUI();
         }
@@ -106,6 +113,8 @@ const keyPressed = function (event) {
         resetGame();
     }
 }
+
+
 
 document.addEventListener('keyup', keyPressed);
 

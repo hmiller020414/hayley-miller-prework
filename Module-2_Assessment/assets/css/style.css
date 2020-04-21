@@ -65,3 +65,38 @@ p {
 #total-wins, #guesses-remaining {
     color: #ccc;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .result-modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 5px solid black;
+    width: 50%; 
+  }
+
+  #result-modal-message {
+    font-family: 'Fira Mono', monospace;
+    font-size: 65px;
+    line-height: 65px;
+    color: #000;
+    text-align: center;
+  }
+
+  #result-modal-subtext {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+  }
